@@ -1,13 +1,25 @@
 ﻿using UnityEngine;
-using System.Collections;
-
+using UnityStandardAssets.CrossPlatformInput;
 public class PlayerMovement : MonoBehaviour
 {
-
     Rigidbody2D rBody;
     Animator anim;
 
     Vector2 movementVector;
+
+    private bool lockMovement;
+    public bool Lock
+    {
+        set
+        {
+            lockMovement = value;
+            anim.SetBool("is_walking", false);
+        }
+        get
+        {
+            return lockMovement;
+        }
+    }
 
 	// Use this for initialization
 	void Start ()
@@ -19,7 +31,10 @@ public class PlayerMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        movementVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        if (lockMovement)
+            return;
+
+        movementVector = new Vector2(CrossPlatformInputManager.GetAxisRaw("Horizontal"), CrossPlatformInputManager.GetAxisRaw("Vertical"));
 
         if(movementVector != Vector2.zero)
         {
