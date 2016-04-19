@@ -1,0 +1,1898 @@
+fileFormatVersion: 2
+guid: c580621dc0891e147842ede085703fec
+timeCreated: 1461093542
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: example_spritesheet_0
+    21300002: example_spritesheet_1
+    21300004: example_spritesheet_2
+    21300006: example_spritesheet_3
+    21300008: example_spritesheet_4
+    21300010: example_spritesheet_5
+    21300012: example_spritesheet_6
+    21300014: example_spritesheet_7
+    21300016: example_spritesheet_8
+    21300018: example_spritesheet_9
+    21300020: example_spritesheet_10
+    21300022: example_spritesheet_11
+    21300024: example_spritesheet_12
+    21300026: example_spritesheet_13
+    21300028: example_spritesheet_14
+    21300030: example_spritesheet_15
+    21300032: example_spritesheet_16
+    21300034: example_spritesheet_17
+    21300036: example_spritesheet_18
+    21300038: example_spritesheet_19
+    21300040: example_spritesheet_20
+    21300042: example_spritesheet_21
+    21300044: example_spritesheet_22
+    21300046: example_spritesheet_23
+    21300048: example_spritesheet_24
+    21300050: example_spritesheet_25
+    21300052: example_spritesheet_26
+    21300054: example_spritesheet_27
+    21300056: example_spritesheet_28
+    21300058: example_spritesheet_29
+    21300060: example_spritesheet_30
+    21300062: example_spritesheet_31
+    21300064: example_spritesheet_32
+    21300066: example_spritesheet_33
+    21300068: example_spritesheet_34
+    21300070: example_spritesheet_35
+    21300072: example_spritesheet_36
+    21300074: example_spritesheet_37
+    21300076: example_spritesheet_38
+    21300078: example_spritesheet_39
+    21300080: example_spritesheet_40
+    21300082: example_spritesheet_41
+    21300084: example_spritesheet_42
+    21300086: example_spritesheet_43
+    21300088: example_spritesheet_44
+    21300090: example_spritesheet_45
+    21300092: example_spritesheet_46
+    21300094: example_spritesheet_47
+    21300096: example_spritesheet_48
+    21300098: example_spritesheet_49
+    21300100: example_spritesheet_50
+    21300102: example_spritesheet_51
+    21300104: example_spritesheet_52
+    21300106: example_spritesheet_53
+    21300108: example_spritesheet_54
+    21300110: example_spritesheet_55
+    21300112: example_spritesheet_56
+    21300114: example_spritesheet_57
+    21300116: example_spritesheet_58
+    21300118: example_spritesheet_59
+    21300120: example_spritesheet_60
+    21300122: example_spritesheet_61
+    21300124: example_spritesheet_62
+    21300126: example_spritesheet_63
+    21300128: example_spritesheet_64
+    21300130: example_spritesheet_65
+    21300132: example_spritesheet_66
+    21300134: example_spritesheet_67
+    21300136: example_spritesheet_68
+    21300138: example_spritesheet_69
+    21300140: example_spritesheet_70
+    21300142: example_spritesheet_71
+    21300144: example_spritesheet_72
+    21300146: example_spritesheet_73
+    21300148: example_spritesheet_74
+    21300150: example_spritesheet_75
+    21300152: example_spritesheet_76
+    21300154: example_spritesheet_77
+    21300156: example_spritesheet_78
+    21300158: example_spritesheet_79
+    21300160: example_spritesheet_80
+    21300162: example_spritesheet_81
+    21300164: example_spritesheet_82
+    21300166: example_spritesheet_83
+    21300168: example_spritesheet_84
+    21300170: example_spritesheet_85
+    21300172: example_spritesheet_86
+    21300174: example_spritesheet_87
+    21300176: example_spritesheet_88
+    21300178: example_spritesheet_89
+    21300180: example_spritesheet_90
+    21300182: example_spritesheet_91
+    21300184: example_spritesheet_92
+    21300186: example_spritesheet_93
+    21300188: example_spritesheet_94
+    21300190: example_spritesheet_95
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 512
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: example_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 24}
+        - {x: -16, y: 13}
+        - {x: -16, y: -18}
+        - {x: -10, y: -24}
+        - {x: 14, y: -24}
+        - {x: 16, y: -17}
+        - {x: 16, y: 24}
+    - name: example_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 24}
+        - {x: -15, y: 22}
+        - {x: -15, y: -11}
+        - {x: -9, y: -24}
+        - {x: 10, y: -24}
+        - {x: 13, y: -22}
+        - {x: 13, y: 17}
+        - {x: 11, y: 24}
+    - name: example_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 24}
+        - {x: -16, y: 13}
+        - {x: -16, y: -18}
+        - {x: -10, y: -24}
+        - {x: 14, y: -24}
+        - {x: 16, y: -17}
+        - {x: 16, y: 24}
+    - name: example_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 24}
+        - {x: -14, y: 20}
+        - {x: -14, y: -17}
+        - {x: -13, y: -24}
+        - {x: 8, y: -24}
+        - {x: 14, y: -12}
+        - {x: 14, y: 16}
+        - {x: 7, y: 24}
+    - name: example_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 24}
+        - {x: -15, y: 21}
+        - {x: -15, y: -24}
+        - {x: 14, y: -24}
+        - {x: 14, y: 24}
+    - name: example_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 24}
+        - {x: -14, y: 22}
+        - {x: -14, y: -17}
+        - {x: -9, y: -24}
+        - {x: 10, y: -24}
+        - {x: 14, y: -13}
+        - {x: 14, y: 23}
+        - {x: 12, y: 24}
+    - name: example_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 24}
+        - {x: -15, y: 21}
+        - {x: -15, y: -24}
+        - {x: 14, y: -24}
+        - {x: 14, y: 24}
+    - name: example_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 24}
+        - {x: -15, y: 16}
+        - {x: -15, y: -7}
+        - {x: -13, y: -22}
+        - {x: -8, y: -24}
+        - {x: 10, y: -24}
+        - {x: 13, y: -17}
+        - {x: 13, y: 18}
+        - {x: 9, y: 24}
+    - name: example_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 24}
+        - {x: -13, y: 24}
+        - {x: -16, y: 10}
+        - {x: -16, y: -16}
+        - {x: -10, y: -24}
+        - {x: 13, y: -24}
+        - {x: 16, y: -18}
+        - {x: 16, y: 23}
+    - name: example_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 24}
+        - {x: -14, y: -24}
+        - {x: 8, y: -24}
+        - {x: 14, y: -21}
+        - {x: 14, y: 17}
+        - {x: 10, y: 24}
+    - name: example_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 24}
+        - {x: -13, y: 24}
+        - {x: -16, y: 10}
+        - {x: -16, y: -16}
+        - {x: -10, y: -24}
+        - {x: 13, y: -24}
+        - {x: 16, y: -18}
+        - {x: 16, y: 23}
+    - name: example_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 24}
+        - {x: -14, y: -21}
+        - {x: -7, y: -24}
+        - {x: 12, y: -24}
+        - {x: 15, y: -20}
+        - {x: 15, y: 19}
+        - {x: 12, y: 24}
+    - name: example_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 24}
+        - {x: -14, y: 4}
+        - {x: -8, y: -24}
+        - {x: 13, y: -24}
+        - {x: 13, y: 22}
+        - {x: 11, y: 24}
+    - name: example_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 24}
+        - {x: -15, y: 18}
+        - {x: -15, y: 1}
+        - {x: -14, y: -19}
+        - {x: -12, y: -24}
+        - {x: 14, y: -24}
+        - {x: 14, y: 18}
+        - {x: 11, y: 24}
+    - name: example_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 24}
+        - {x: -14, y: 1}
+        - {x: -8, y: -24}
+        - {x: 10, y: -24}
+        - {x: 13, y: -16}
+        - {x: 13, y: 19}
+        - {x: 10, y: 24}
+    - name: example_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 24}
+        - {x: -11, y: 24}
+        - {x: -15, y: 19}
+        - {x: -15, y: -22}
+        - {x: -13, y: -24}
+        - {x: 8, y: -24}
+        - {x: 14, y: -22}
+        - {x: 14, y: 3}
+        - {x: 12, y: 19}
+    - name: example_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 24}
+        - {x: -15, y: 6}
+        - {x: -13, y: -2}
+        - {x: -7, y: -24}
+        - {x: 10, y: -24}
+        - {x: 14, y: -16}
+        - {x: 14, y: 16}
+        - {x: 12, y: 24}
+    - name: example_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 24}
+        - {x: -15, y: -24}
+        - {x: 14, y: -24}
+        - {x: 14, y: 21}
+        - {x: 8, y: 24}
+    - name: example_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 24}
+        - {x: -15, y: 6}
+        - {x: -13, y: -2}
+        - {x: -7, y: -24}
+        - {x: 10, y: -24}
+        - {x: 14, y: -16}
+        - {x: 14, y: 16}
+        - {x: 12, y: 24}
+    - name: example_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 24}
+        - {x: -14, y: 24}
+        - {x: -16, y: 20}
+        - {x: -16, y: -14}
+        - {x: -12, y: -24}
+        - {x: 14, y: -24}
+        - {x: 16, y: -20}
+        - {x: 16, y: 15}
+        - {x: 14, y: 20}
+    - name: example_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 24}
+        - {x: -14, y: 6}
+        - {x: -7, y: -24}
+        - {x: 14, y: -24}
+        - {x: 14, y: 24}
+    - name: example_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 24}
+        - {x: -15, y: 23}
+        - {x: -15, y: -5}
+        - {x: -14, y: -14}
+        - {x: -12, y: -24}
+        - {x: 14, y: -24}
+        - {x: 14, y: 24}
+    - name: example_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 24}
+        - {x: -14, y: 6}
+        - {x: -7, y: -24}
+        - {x: 14, y: -24}
+        - {x: 14, y: 24}
+    - name: example_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 24}
+        - {x: -15, y: 23}
+        - {x: -15, y: -11}
+        - {x: -13, y: -23}
+        - {x: -12, y: -24}
+        - {x: 13, y: -24}
+        - {x: 13, y: 24}
+    - name: example_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 24}
+        - {x: -13, y: 21}
+        - {x: -13, y: -18}
+        - {x: -10, y: -24}
+        - {x: 10, y: -24}
+        - {x: 14, y: 6}
+        - {x: 14, y: 24}
+    - name: example_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 24}
+        - {x: -12, y: 19}
+        - {x: -14, y: 8}
+        - {x: -14, y: -24}
+        - {x: 15, y: -24}
+        - {x: 15, y: 23}
+        - {x: 11, y: 24}
+    - name: example_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 24}
+        - {x: -13, y: 19}
+        - {x: -13, y: -6}
+        - {x: -10, y: -24}
+        - {x: 8, y: -24}
+        - {x: 14, y: -3}
+        - {x: 14, y: 24}
+    - name: example_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 24}
+        - {x: -14, y: 17}
+        - {x: -14, y: -24}
+        - {x: 15, y: -24}
+        - {x: 15, y: 22}
+        - {x: 11, y: 24}
+    - name: example_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 24}
+        - {x: -10, y: 24}
+        - {x: -14, y: 23}
+        - {x: -14, y: -11}
+        - {x: -8, y: -24}
+        - {x: 6, y: -24}
+        - {x: 13, y: -14}
+        - {x: 15, y: 4}
+        - {x: 15, y: 23}
+    - name: example_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 24}
+        - {x: -14, y: -24}
+        - {x: 11, y: -24}
+        - {x: 15, y: 7}
+        - {x: 15, y: 20}
+        - {x: 9, y: 24}
+    - name: example_spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 24}
+        - {x: -10, y: 24}
+        - {x: -14, y: 23}
+        - {x: -14, y: -11}
+        - {x: -8, y: -24}
+        - {x: 6, y: -24}
+        - {x: 13, y: -14}
+        - {x: 15, y: 4}
+        - {x: 15, y: 23}
+    - name: example_spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 24}
+        - {x: -11, y: 24}
+        - {x: -16, y: 16}
+        - {x: -16, y: -19}
+        - {x: -11, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: 19}
+    - name: example_spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 24}
+        - {x: -12, y: -24}
+        - {x: 10, y: -24}
+        - {x: 16, y: 2}
+        - {x: 16, y: 24}
+    - name: example_spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 24}
+        - {x: -12, y: 21}
+        - {x: -12, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: 24}
+    - name: example_spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 24}
+        - {x: -12, y: -24}
+        - {x: 10, y: -24}
+        - {x: 16, y: 2}
+        - {x: 16, y: 24}
+    - name: example_spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 24}
+        - {x: -11, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: 24}
+    - name: example_spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 24}
+        - {x: -16, y: -24}
+        - {x: 11, y: -24}
+        - {x: 16, y: -16}
+        - {x: 16, y: 21}
+        - {x: 10, y: 24}
+    - name: example_spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 24}
+        - {x: -15, y: 13}
+        - {x: -15, y: -14}
+        - {x: -9, y: -24}
+        - {x: 8, y: -24}
+        - {x: 15, y: -14}
+        - {x: 15, y: 11}
+        - {x: 10, y: 24}
+    - name: example_spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 24}
+        - {x: -16, y: -24}
+        - {x: 11, y: -24}
+        - {x: 16, y: -16}
+        - {x: 16, y: 21}
+        - {x: 10, y: 24}
+    - name: example_spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 24}
+        - {x: -8, y: 24}
+        - {x: -16, y: 16}
+        - {x: -16, y: -13}
+        - {x: -9, y: -24}
+        - {x: 11, y: -24}
+        - {x: 14, y: -22}
+        - {x: 14, y: 16}
+        - {x: 11, y: 19}
+    - name: example_spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 24}
+        - {x: -14, y: 22}
+        - {x: -15, y: 11}
+        - {x: -15, y: -14}
+        - {x: -9, y: -24}
+        - {x: 11, y: -24}
+        - {x: 14, y: -21}
+        - {x: 14, y: 14}
+        - {x: 11, y: 24}
+    - name: example_spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 24}
+        - {x: -15, y: 15}
+        - {x: -15, y: 1}
+        - {x: -11, y: -23}
+        - {x: -10, y: -24}
+        - {x: 8, y: -24}
+        - {x: 13, y: -14}
+        - {x: 13, y: 22}
+        - {x: 12, y: 24}
+    - name: example_spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 24}
+        - {x: -14, y: 22}
+        - {x: -15, y: 11}
+        - {x: -15, y: -14}
+        - {x: -9, y: -24}
+        - {x: 11, y: -24}
+        - {x: 14, y: -21}
+        - {x: 14, y: 14}
+        - {x: 11, y: 24}
+    - name: example_spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 24}
+        - {x: -14, y: 22}
+        - {x: -14, y: -16}
+        - {x: -9, y: -24}
+        - {x: 8, y: -24}
+        - {x: 14, y: -20}
+        - {x: 14, y: 19}
+        - {x: 9, y: 24}
+    - name: example_spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 24}
+        - {x: -16, y: -24}
+        - {x: 15, y: -24}
+        - {x: 16, y: -21}
+        - {x: 16, y: 24}
+    - name: example_spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 24}
+        - {x: -14, y: 17}
+        - {x: -14, y: -19}
+        - {x: -11, y: -24}
+        - {x: 7, y: -24}
+        - {x: 14, y: -20}
+        - {x: 16, y: -18}
+        - {x: 16, y: 24}
+    - name: example_spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 24}
+        - {x: -16, y: -24}
+        - {x: 15, y: -24}
+        - {x: 16, y: -21}
+        - {x: 16, y: 24}
+    - name: example_spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 24}
+        - {x: -15, y: 22}
+        - {x: -15, y: -24}
+        - {x: 12, y: -24}
+        - {x: 15, y: -17}
+        - {x: 15, y: 24}
+    - name: example_spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 24}
+        - {x: -15, y: -24}
+        - {x: 12, y: -24}
+        - {x: 14, y: -22}
+        - {x: 14, y: 19}
+        - {x: 12, y: 24}
+    - name: example_spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 23}
+        - {x: -15, y: -24}
+        - {x: 10, y: -24}
+        - {x: 13, y: -15}
+        - {x: 13, y: 23}
+    - name: example_spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 24}
+        - {x: -15, y: -24}
+        - {x: 12, y: -24}
+        - {x: 14, y: -22}
+        - {x: 14, y: 19}
+        - {x: 12, y: 24}
+    - name: example_spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 23}
+        - {x: -14, y: 19}
+        - {x: -14, y: -16}
+        - {x: -13, y: -23}
+        - {x: -10, y: -24}
+        - {x: 11, y: -24}
+        - {x: 14, y: -16}
+        - {x: 14, y: 19}
+        - {x: 7, y: 23}
+    - name: example_spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 24}
+        - {x: -16, y: -22}
+        - {x: -13, y: -24}
+        - {x: 10, y: -24}
+        - {x: 16, y: -16}
+        - {x: 16, y: 14}
+        - {x: 11, y: 24}
+    - name: example_spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 24}
+        - {x: -16, y: 22}
+        - {x: -16, y: -16}
+        - {x: -12, y: -24}
+        - {x: 11, y: -24}
+        - {x: 15, y: -11}
+        - {x: 15, y: 20}
+        - {x: 11, y: 24}
+    - name: example_spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 24}
+        - {x: -16, y: -22}
+        - {x: -13, y: -24}
+        - {x: 10, y: -24}
+        - {x: 16, y: -16}
+        - {x: 16, y: 14}
+        - {x: 11, y: 24}
+    - name: example_spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 24}
+        - {x: -16, y: -13}
+        - {x: -15, y: -21}
+        - {x: -9, y: -24}
+        - {x: 15, y: -24}
+        - {x: 15, y: 17}
+        - {x: 12, y: 24}
+    - name: example_spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 24}
+        - {x: -10, y: 24}
+        - {x: -16, y: 18}
+        - {x: -16, y: -16}
+        - {x: -13, y: -24}
+        - {x: 9, y: -24}
+        - {x: 12, y: -16}
+        - {x: 12, y: 20}
+    - name: example_spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 24}
+        - {x: -15, y: 22}
+        - {x: -15, y: -24}
+        - {x: 8, y: -24}
+        - {x: 10, y: -19}
+        - {x: 10, y: 21}
+        - {x: 7, y: 24}
+    - name: example_spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 24}
+        - {x: -16, y: -24}
+        - {x: 9, y: -24}
+        - {x: 12, y: -16}
+        - {x: 12, y: 21}
+        - {x: 5, y: 24}
+    - name: example_spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 24}
+        - {x: -15, y: 19}
+        - {x: -15, y: -24}
+        - {x: 9, y: -24}
+        - {x: 10, y: -22}
+        - {x: 10, y: 21}
+        - {x: 9, y: 24}
+    - name: example_spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 24}
+        - {x: -14, y: 22}
+        - {x: -14, y: -1}
+        - {x: -7, y: -24}
+        - {x: 14, y: -24}
+        - {x: 16, y: -19}
+        - {x: 16, y: 23}
+        - {x: 15, y: 24}
+    - name: example_spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 24}
+        - {x: -14, y: 21}
+        - {x: -14, y: 3}
+        - {x: -11, y: -23}
+        - {x: -11, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: 24}
+    - name: example_spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 24}
+        - {x: -14, y: 22}
+        - {x: -14, y: -1}
+        - {x: -7, y: -24}
+        - {x: 14, y: -24}
+        - {x: 16, y: -19}
+        - {x: 16, y: 23}
+        - {x: 15, y: 24}
+    - name: example_spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 24}
+        - {x: -14, y: 20}
+        - {x: -14, y: -24}
+        - {x: 12, y: -24}
+        - {x: 16, y: -15}
+        - {x: 16, y: 12}
+        - {x: 11, y: 24}
+    - name: example_spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 24}
+        - {x: -15, y: 2}
+        - {x: -9, y: -24}
+        - {x: 11, y: -24}
+        - {x: 16, y: -7}
+        - {x: 16, y: 24}
+    - name: example_spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 24}
+        - {x: -16, y: 22}
+        - {x: -16, y: -15}
+        - {x: -14, y: -24}
+        - {x: 12, y: -24}
+        - {x: 15, y: -14}
+        - {x: 15, y: 16}
+        - {x: 9, y: 24}
+    - name: example_spritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 24}
+        - {x: -15, y: 2}
+        - {x: -9, y: -24}
+        - {x: 11, y: -24}
+        - {x: 16, y: -7}
+        - {x: 16, y: 24}
+    - name: example_spritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 24}
+        - {x: -16, y: 24}
+        - {x: -16, y: -20}
+        - {x: -13, y: -24}
+        - {x: 11, y: -24}
+        - {x: 15, y: -19}
+        - {x: 15, y: 20}
+    - name: example_spritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 24}
+        - {x: -13, y: 24}
+        - {x: -16, y: 23}
+        - {x: -16, y: -3}
+        - {x: -10, y: -24}
+        - {x: 7, y: -24}
+        - {x: 13, y: -13}
+        - {x: 14, y: 1}
+        - {x: 14, y: 17}
+    - name: example_spritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 24}
+        - {x: -13, y: 24}
+        - {x: -16, y: 19}
+        - {x: -16, y: -14}
+        - {x: -13, y: -24}
+        - {x: 11, y: -24}
+        - {x: 13, y: -23}
+        - {x: 15, y: -9}
+        - {x: 15, y: 16}
+    - name: example_spritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 24}
+        - {x: -16, y: -7}
+        - {x: -11, y: -24}
+        - {x: 9, y: -24}
+        - {x: 14, y: -18}
+        - {x: 14, y: 24}
+    - name: example_spritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 22}
+        - {x: 8, y: 24}
+        - {x: -13, y: 24}
+        - {x: -16, y: 19}
+        - {x: -16, y: -24}
+        - {x: 9, y: -24}
+        - {x: 12, y: -16}
+        - {x: 13, y: -12}
+    - name: example_spritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 24}
+        - {x: -16, y: -11}
+        - {x: -8, y: -24}
+        - {x: 6, y: -24}
+        - {x: 14, y: 1}
+        - {x: 14, y: 24}
+    - name: example_spritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 24}
+        - {x: -11, y: 24}
+        - {x: -16, y: 16}
+        - {x: -16, y: -24}
+        - {x: 8, y: -24}
+        - {x: 11, y: -23}
+        - {x: 14, y: -11}
+        - {x: 14, y: 21}
+    - name: example_spritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 24}
+        - {x: -16, y: -11}
+        - {x: -8, y: -24}
+        - {x: 6, y: -24}
+        - {x: 14, y: 1}
+        - {x: 14, y: 24}
+    - name: example_spritesheet_75
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 24}
+        - {x: -16, y: 20}
+        - {x: -16, y: -12}
+        - {x: -11, y: -24}
+        - {x: 14, y: -24}
+        - {x: 14, y: 24}
+    - name: example_spritesheet_76
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 24}
+        - {x: -16, y: 21}
+        - {x: -16, y: -5}
+        - {x: -10, y: -24}
+        - {x: 9, y: -24}
+        - {x: 15, y: -2}
+        - {x: 15, y: 24}
+    - name: example_spritesheet_77
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 24}
+        - {x: -15, y: 17}
+        - {x: -15, y: -17}
+        - {x: -12, y: -24}
+        - {x: 15, y: -24}
+        - {x: 16, y: -21}
+        - {x: 16, y: 22}
+        - {x: 14, y: 24}
+    - name: example_spritesheet_78
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 24}
+        - {x: -16, y: 21}
+        - {x: -16, y: -5}
+        - {x: -10, y: -24}
+        - {x: 9, y: -24}
+        - {x: 15, y: -2}
+        - {x: 15, y: 24}
+    - name: example_spritesheet_79
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 24}
+        - {x: -15, y: 22}
+        - {x: -15, y: -21}
+        - {x: -11, y: -24}
+        - {x: 14, y: -24}
+        - {x: 15, y: -23}
+        - {x: 16, y: -17}
+        - {x: 16, y: 24}
+    - name: example_spritesheet_80
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 24}
+        - {x: -15, y: 24}
+        - {x: -16, y: 23}
+        - {x: -16, y: -7}
+        - {x: -10, y: -24}
+        - {x: 5, y: -24}
+        - {x: 11, y: -5}
+        - {x: 12, y: 5}
+        - {x: 12, y: 21}
+      - - {x: 13, y: 6}
+        - {x: 15, y: 4}
+        - {x: 16, y: 4}
+        - {x: 16, y: 14}
+        - {x: 13, y: 13}
+    - name: example_spritesheet_81
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 24}
+        - {x: -16, y: 22}
+        - {x: -16, y: -24}
+        - {x: 9, y: -24}
+        - {x: 12, y: -15}
+        - {x: 12, y: 20}
+        - {x: 11, y: 24}
+    - name: example_spritesheet_82
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 24}
+        - {x: -16, y: -16}
+        - {x: -11, y: -24}
+        - {x: 5, y: -24}
+        - {x: 12, y: -7}
+        - {x: 12, y: 22}
+        - {x: 11, y: 24}
+    - name: example_spritesheet_83
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 24}
+        - {x: -15, y: 24}
+        - {x: -16, y: 23}
+        - {x: -16, y: -24}
+        - {x: 12, y: -24}
+        - {x: 12, y: 18}
+    - name: example_spritesheet_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 24}
+        - {x: -8, y: 24}
+        - {x: -15, y: 14}
+        - {x: -15, y: -20}
+        - {x: -13, y: -24}
+        - {x: 10, y: -24}
+        - {x: 14, y: -18}
+        - {x: 14, y: 21}
+    - name: example_spritesheet_85
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 23}
+        - {x: -16, y: 18}
+        - {x: -16, y: -17}
+        - {x: -10, y: -24}
+        - {x: 8, y: -24}
+        - {x: 13, y: -22}
+        - {x: 13, y: 23}
+    - name: example_spritesheet_86
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 24}
+        - {x: -8, y: 24}
+        - {x: -15, y: 14}
+        - {x: -15, y: -20}
+        - {x: -13, y: -24}
+        - {x: 10, y: -24}
+        - {x: 14, y: -18}
+        - {x: 14, y: 21}
+    - name: example_spritesheet_87
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 23}
+        - {x: -14, y: 23}
+        - {x: -14, y: -17}
+        - {x: -9, y: -24}
+        - {x: 8, y: -24}
+        - {x: 15, y: -4}
+        - {x: 15, y: 15}
+        - {x: 14, y: 20}
+    - name: example_spritesheet_88
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 24}
+        - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: -9, y: -24}
+        - {x: 10, y: -24}
+        - {x: 16, y: -16}
+        - {x: 16, y: 19}
+        - {x: 13, y: 24}
+    - name: example_spritesheet_89
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -23}
+        - {x: -15, y: -24}
+        - {x: 11, y: -24}
+        - {x: 15, y: -23}
+        - {x: 15, y: 24}
+        - {x: -16, y: 24}
+    - name: example_spritesheet_90
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 24}
+        - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: -9, y: -24}
+        - {x: 10, y: -24}
+        - {x: 16, y: -16}
+        - {x: 16, y: 19}
+        - {x: 13, y: 24}
+    - name: example_spritesheet_91
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 24}
+        - {x: -15, y: 23}
+        - {x: -16, y: 22}
+        - {x: -16, y: -13}
+        - {x: -12, y: -24}
+        - {x: 15, y: -24}
+        - {x: 15, y: 23}
+        - {x: 14, y: 24}
+    - name: example_spritesheet_92
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 24}
+        - {x: -16, y: 22}
+        - {x: -16, y: -21}
+        - {x: -15, y: -24}
+        - {x: 12, y: -24}
+        - {x: 12, y: 24}
+    - name: example_spritesheet_93
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 23}
+        - {x: -9, y: 23}
+        - {x: -15, y: 21}
+        - {x: -15, y: -5}
+        - {x: -14, y: -16}
+        - {x: -11, y: -24}
+        - {x: 4, y: -24}
+        - {x: 6, y: -22}
+        - {x: 10, y: -13}
+        - {x: 10, y: 20}
+    - name: example_spritesheet_94
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 24}
+        - {x: -16, y: 22}
+        - {x: -16, y: -21}
+        - {x: -15, y: -24}
+        - {x: 12, y: -24}
+        - {x: 12, y: 24}
+    - name: example_spritesheet_95
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 23}
+        - {x: -8, y: 23}
+        - {x: -15, y: 19}
+        - {x: -15, y: -15}
+        - {x: -11, y: -22}
+        - {x: -9, y: -24}
+        - {x: 8, y: -24}
+        - {x: 10, y: -15}
+        - {x: 10, y: 17}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
