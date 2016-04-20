@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
 	void Start ()
     {
         rBody = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        anim = GetComponentInChildren<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -39,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
         if(movementVector != Vector2.zero)
         {
             anim.SetBool("is_walking", true);
+            //anim.speed = movementVector.sqrMagnitude;
             anim.SetFloat("input_x", movementVector.x);
             anim.SetFloat("input_y", movementVector.y);
         }

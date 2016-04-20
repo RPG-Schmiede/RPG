@@ -2,16 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class StrategyTile : MonoBehaviour
+public class RPGTile : MonoBehaviour
 {
     private static readonly IDictionary<string, Color> TypeToColor = new Dictionary<string, Color>()
     {
-        { "Bridge", new Color(0.5f, 0, 0f) },
-        { "Grass", new Color(0.9f, 0.6f, 0) },
-        { "Mountain", Color.red },
-        { "Tree", new Color(0, 0.5f, 0) },
-        { "Wall", Color.black },
-        { "Water", Color.blue },
+        { "Teleporter", new Color(0.5f, 0, 0f) }
     };
 
     public string TileNote = "<no note>";
@@ -25,11 +20,10 @@ public class StrategyTile : MonoBehaviour
         position.y -= 8;
 
         Color drawColor;
-        if (!StrategyTile.TypeToColor.TryGetValue(this.TileType, out drawColor))
+        if (!RPGTile.TypeToColor.TryGetValue(this.TileType, out drawColor))
         {
             drawColor = Color.black;
         }
-
 
         Color fillColor = drawColor;
         fillColor.a = 0.25f;

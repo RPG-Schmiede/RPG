@@ -14,7 +14,9 @@ namespace UnityStandardAssets.CrossPlatformInput
 			OnlyVertical // Only vertical
 		}
 
-		public int MovementRange = 100;
+        [Range(1, 100)]
+        public int MovementRangePercentage = 5;
+		private int MovementRange = 100;
 		public AxisOption axesToUse = AxisOption.Both; // The options for the axes that the still will use
 		public string horizontalAxisName = "Horizontal"; // The name given to the horizontal axis for the cross platform input
 		public string verticalAxisName = "Vertical"; // The name given to the vertical axis for the cross platform input
@@ -33,6 +35,7 @@ namespace UnityStandardAssets.CrossPlatformInput
         void Start()
         {
             m_StartPos = transform.position;
+            MovementRange = (int)(((Screen.height / 100) * MovementRangePercentage) / (Screen.dpi / 96f));
         }
 
 		void UpdateVirtualAxes(Vector3 value)
@@ -40,14 +43,15 @@ namespace UnityStandardAssets.CrossPlatformInput
 			var delta = m_StartPos - value;
 			delta.y = -delta.y;
 			delta /= MovementRange;
+
 			if (m_UseX)
-			{
+			{                
 				m_HorizontalVirtualAxis.Update(-delta.x);
 			}
 
 			if (m_UseY)
 			{
-				m_VerticalVirtualAxis.Update(delta.y);
+                m_VerticalVirtualAxis.Update(delta.y);
 			}
 		}
 
@@ -78,7 +82,7 @@ namespace UnityStandardAssets.CrossPlatformInput
 			if (m_UseX)
 			{
 				int delta = (int)(data.position.x - m_StartPos.x);
-				delta = Mathf.Clamp(delta, - MovementRange, MovementRange);
+				delta = Mathf.Clamp(delta, -MovementRange, MovementRange);
 				newPos.x = delta;
 			}
 
