@@ -1,0 +1,286 @@
+fileFormatVersion: 2
+guid: b8710ebb5e2be864893543c2302c0eae
+timeCreated: 1461779313
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: big_worm_0
+    21300002: big_worm_1
+    21300004: big_worm_2
+    21300006: big_worm_3
+    21300008: big_worm_4
+    21300010: big_worm_5
+    21300012: big_worm_6
+    21300014: big_worm_7
+    21300016: big_worm_8
+    21300018: big_worm_9
+    21300020: big_worm_10
+    21300022: big_worm_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 256
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: big_worm_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 35
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08179962}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: 45.91002}
+        - {x: -17.5, y: 41.91002}
+        - {x: -17.5, y: 3.910019}
+        - {x: -7.5, y: -3.089981}
+        - {x: 11.5, y: -3.089981}
+        - {x: 17.5, y: 5.910019}
+        - {x: 17.5, y: 41.91002}
+        - {x: 14.5, y: 45.91002}
+    - name: big_worm_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 150
+        width: 35
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08179962}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 43.91002}
+        - {x: -17.5, y: 42.91002}
+        - {x: -17.5, y: 2.910019}
+        - {x: -7.5, y: -4.089981}
+        - {x: 16.5, y: -4.089981}
+        - {x: 17.5, y: -2.089981}
+        - {x: 17.5, y: 42.91002}
+        - {x: 16.5, y: 43.91002}
+    - name: big_worm_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 150
+        width: 35
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08179962}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 42.91002}
+        - {x: -16.5, y: 37.91002}
+        - {x: -16.5, y: 0.9100189}
+        - {x: -9.5, y: -4.089981}
+        - {x: 11.5, y: -4.089981}
+        - {x: 13.5, y: -3.089981}
+        - {x: 16.5, y: 4.910019}
+        - {x: 16.5, y: 37.91002}
+        - {x: 14.5, y: 42.91002}
+    - name: big_worm_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 35
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08179962}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 45.91002}
+        - {x: -16.5, y: -4.089981}
+        - {x: 15.5, y: -4.089981}
+        - {x: 17.5, y: -2.089981}
+        - {x: 17.5, y: 45.91002}
+    - name: big_worm_4
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 100
+        width: 35
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08179962}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 43.91002}
+        - {x: -17.5, y: 0.9100189}
+        - {x: -15.5, y: -4.089981}
+        - {x: 17.5, y: -4.089981}
+        - {x: 17.5, y: 43.91002}
+    - name: big_worm_5
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 100
+        width: 35
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08179962}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.5, y: 42.91002}
+        - {x: -15.5, y: -4.089981}
+        - {x: 14.5, y: -4.089981}
+        - {x: 17.5, y: 0.9100189}
+        - {x: 17.5, y: 42.91002}
+    - name: big_worm_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 35
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08179962}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: 45.91002}
+        - {x: -17.5, y: 41.91002}
+        - {x: -17.5, y: 3.910019}
+        - {x: -7.5, y: -3.089981}
+        - {x: 11.5, y: -3.089981}
+        - {x: 17.5, y: 5.910019}
+        - {x: 17.5, y: 41.91002}
+        - {x: 14.5, y: 45.91002}
+    - name: big_worm_7
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 50
+        width: 35
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08179962}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 43.91002}
+        - {x: -17.5, y: -1.0899811}
+        - {x: -10.5, y: -4.089981}
+        - {x: 8.5, y: -4.089981}
+        - {x: 13.5, y: -2.089981}
+        - {x: 17.5, y: 2.910019}
+        - {x: 17.5, y: 43.91002}
+    - name: big_worm_8
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 50
+        width: 35
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08179962}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 42.91002}
+        - {x: -16.5, y: 37.91002}
+        - {x: -16.5, y: 0.9100189}
+        - {x: -9.5, y: -4.089981}
+        - {x: 11.5, y: -4.089981}
+        - {x: 13.5, y: -3.089981}
+        - {x: 16.5, y: 4.910019}
+        - {x: 16.5, y: 37.91002}
+        - {x: 14.5, y: 42.91002}
+    - name: big_worm_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 35
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08179962}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 45.91002}
+        - {x: -17.5, y: 40.91002}
+        - {x: -17.5, y: 2.910019}
+        - {x: -10.5, y: -4.089981}
+        - {x: 1.5, y: -4.089981}
+        - {x: 16.5, y: 2.910019}
+        - {x: 16.5, y: 42.91002}
+        - {x: 14.5, y: 45.91002}
+    - name: big_worm_10
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 0
+        width: 35
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08179962}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 43.91002}
+        - {x: -17.5, y: -3.089981}
+        - {x: -13.5, y: -4.089981}
+        - {x: 15.5, y: -4.089981}
+        - {x: 17.5, y: -1.0899811}
+        - {x: 17.5, y: 43.91002}
+    - name: big_worm_11
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 35
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08179962}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.5, y: 42.91002}
+        - {x: -16.5, y: 41.91002}
+        - {x: -17.5, y: 35.91002}
+        - {x: -17.5, y: -4.089981}
+        - {x: 12.5, y: -4.089981}
+        - {x: 15.5, y: -0.08998108}
+        - {x: 15.5, y: 42.91002}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

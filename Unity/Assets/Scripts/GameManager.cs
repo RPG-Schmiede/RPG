@@ -8,8 +8,12 @@ using System.Collections.Generic;
 /// </summary>
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance;
+
     public Transform player;
     public InventoryManager inventoryManager;
+
+    public float[] moveFrequenzValues;
 
     // TODO: Do ObserverPattern
     public Text infoTextField;
@@ -24,6 +28,8 @@ public class GameManager : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         LoadGame();
+
+        Instance = this;
     }
 
     #region GameLoop

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="15" height="15" tilewidth="32" tileheight="32" nextobjectid="8">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="15" height="15" tilewidth="32" tileheight="32" nextobjectid="15">
  <tileset firstgid="1" name="Grass" tilewidth="32" tileheight="32" tilecount="18" columns="3">
   <image source="../Source/LPC Base Assets/tiles/grass.png" width="96" height="192"/>
   <terraintypes>
@@ -91,10 +91,34 @@
   <terraintypes>
    <terrain name="Wasser" tile="-1"/>
   </terraintypes>
-  <tile id="1" terrain="0,0,0,"/>
-  <tile id="2" terrain="0,0,,0"/>
-  <tile id="4" terrain="0,,0,0"/>
-  <tile id="5" terrain=",0,0,0"/>
+  <tile id="1" terrain="0,0,0,">
+   <objectgroup draworder="index">
+    <object id="0" x="0" y="0.0625">
+     <polygon points="0,0 -0.0625,31.875 16,31.875 32.0625,14.5 31.9375,-0.1875"/>
+    </object>
+   </objectgroup>
+  </tile>
+  <tile id="2" terrain="0,0,,0">
+   <objectgroup draworder="index">
+    <object id="0" x="32" y="0">
+     <polygon points="0,0 -32.125,-0.0625 -32.0625,14.5 -14.5625,31.9375 -0.125,31.9375"/>
+    </object>
+   </objectgroup>
+  </tile>
+  <tile id="4" terrain="0,,0,0">
+   <objectgroup draworder="index">
+    <object id="0" x="-0.125" y="32">
+     <polygon points="0,0 0.0625,-32 12,-32 32.1875,-12.6875 32,0"/>
+    </object>
+   </objectgroup>
+  </tile>
+  <tile id="5" terrain=",0,0,0">
+   <objectgroup draworder="index">
+    <object id="0" x="32" y="31.9375">
+     <polygon points="0,0 -0.0625,-32 -15,-32 -32,-14.1875 -32,0.0625"/>
+    </object>
+   </objectgroup>
+  </tile>
   <tile id="6" terrain=",,,0">
    <objectgroup draworder="index">
     <object id="0" x="15.0909" y="32">
@@ -229,6 +253,12 @@
    </objectgroup>
   </tile>
  </tileset>
+ <tileset firstgid="382" name="small_worm" tilewidth="32" tileheight="32" tilecount="12" columns="3">
+  <image source="../Source/LPC Base Assets/sprites/monsters/small_worm.png" width="96" height="128"/>
+  <tile id="0">
+   <objectgroup draworder="index"/>
+  </tile>
+ </tileset>
  <layer name="Wasser" width="15" height="15">
   <properties>
    <property name="unity:layer" value="water"/>
@@ -322,8 +352,7 @@
  </layer>
  <layer name="Pilze" width="15" height="15">
   <properties>
-   <property name="rpg:collactable" type="bool" value="true"/>
-   <property name="rpg:itemtype" value="Pilz"/>
+   <property name="rpg:prefab" value="Pilz"/>
    <property name="unity:sortingLayerName" value="middle"/>
   </properties>
   <data encoding="csv">
@@ -421,6 +450,33 @@
    <properties>
     <property name="unity:isTrigger" type="bool" value="true"/>
    </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Enemies">
+  <object id="8" name="Wurm" x="233" y="105" width="22" height="22">
+   <properties>
+    <property name="rpg:switch1" value="timeperiod(6,22)"/>
+    <property name="rpg:switch2" value="timeperiod(&quot;morning&quot;,&quot;afternoon&quot;)"/>
+    <property name="rpg:switch3" value="time(6,12,18)"/>
+    <property name="rpg:switch4" value="time(&quot;midnight&quot;)"/>
+    <property name="rpg:switch5" value="(time &gt; 6 &amp;&amp; weather == &quot;rain&quot;)"/>
+    <property name="rpg:waypointorder" value="random"/>
+    <property name="rpg:waypointorder2" value="(1,2,3,4),(1,3,2,4)"/>
+    <property name="rpg:waypointorder3" value="(&quot;normal&quot;),(2,3,4,1),(&quot;random&quot;)"/>
+    <property name="rpg:waypoints" value="Wurm_Wegpunkt1,Wurm_Wegpunkt2,Wurm_Wegpunkt3,Wurm_Wegpunkt4"/>
+   </properties>
+  </object>
+  <object id="10" name="Wurm_Wegpunkt1" x="154.5" y="116.5" width="9.5" height="9.5">
+   <ellipse/>
+  </object>
+  <object id="12" name="Wurm_Wegpunkt2" x="200.75" y="193.75" width="9.5" height="9.5">
+   <ellipse/>
+  </object>
+  <object id="13" name="Wurm_Wegpunkt3" x="269.75" y="174.25" width="9.5" height="9.5">
+   <ellipse/>
+  </object>
+  <object id="14" name="Wurm_Wegpunkt4" x="237.25" y="131.25" width="9.5" height="9.5">
+   <ellipse/>
   </object>
  </objectgroup>
 </map>
