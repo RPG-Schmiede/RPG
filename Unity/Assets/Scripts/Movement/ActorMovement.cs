@@ -8,12 +8,10 @@ public class ActorMovement : MonoBehaviour
     [Range(0.0f, 10.0f)]
     public float speed = 1.0f;
 
-    private Vector2 movementVector;
-
     /// <summary>
     /// Use this for initialization
     /// </summary>
-    void Start ()
+    void Start()
     {
         rBody = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
@@ -42,7 +40,10 @@ public class ActorMovement : MonoBehaviour
         }
 
         // -- RigidBody --
-        rBody.MovePosition(rBody.position + movementVector * speed * Time.deltaTime);
+        if(movementVector != Vector2.zero)
+        {
+            rBody.MovePosition(rBody.position + movementVector * speed * Time.deltaTime);
+        }
     }
 
     /// <summary>

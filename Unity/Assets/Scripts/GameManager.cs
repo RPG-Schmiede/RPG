@@ -90,8 +90,23 @@ public class GameManager : MonoBehaviour
         infoTextField.text = "Game successfully saved!";
     }
 
+    /// <summary>
+    /// Reset SaveGame
+    /// </summary>
+    public void ResetGame()
+    {
+        PlayerPrefs.SetString("SaveGame", null);
+        PlayerPrefs.Save();
+        infoTextField.text = "Clear Game successfully!";
+
+        Application.LoadLevel(0);
+    }
+
     #endregion
 
+    /// <summary>
+    /// Quit the App
+    /// </summary>
     public void QuitGame()
     {
         Application.Quit();
