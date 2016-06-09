@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityStandardAssets.CrossPlatformInput;
 using System.Collections;
 
@@ -8,6 +9,7 @@ public class PlayerController : MonoBehaviour
 
     private ActorMovement actorMovement;
     private Vector2 movementVector;
+    private bool movementStart;
 
     private Vector3 touchStartPosition;
 
@@ -49,24 +51,27 @@ public class PlayerController : MonoBehaviour
         if(touchMovement)
         {
             // --- Touch Movement ---
-            if(Input.GetMouseButtonDown(0))
+            if(Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
             {
                 touchStartPosition = Input.mousePosition;
+                movementStart = true;
             }
 
-            if(Input.GetMouseButton(0))
+            if(movementStart && Input.GetMouseButton(0))
             {
                 // Gets a vector that points from the player's position to the target's.
-                Vector3 heading = Input.mousePosition - touchStartPosition;
+                Vector3 heading = Input.mousePosition - new Vector3(Screen.width * 0.5f, Screen.height * 0.5f);
                 float distance = heading.magnitude;
                 Vector2 direction = heading / distance; // This is now the normalized direction.
 
                 actorMovement.Move(direction);
             }
 
-            if (Input.GetMouseButtonUp(0))
+            if(Input.GetMouseButtonUp(0))
             {
+                // Reset Animator
                 actorMovement.Move(Vector2.zero);
+                movementStart = false;
             }
         }
         else

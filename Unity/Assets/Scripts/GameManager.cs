@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
@@ -27,7 +28,15 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        LoadGame();
+
+        if (PlayerPrefs.GetInt("NewGame") == 1)
+        {
+            PlayerPrefs.SetInt("NewGame", 0);
+        }
+        else
+        { 
+            LoadGame();
+        }
 
         Instance = this;
     }
@@ -99,7 +108,7 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.Save();
         infoTextField.text = "Clear Game successfully!";
 
-        Application.LoadLevel(0);
+        SceneManager.LoadScene("Game");
     }
 
     #endregion
@@ -109,7 +118,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void QuitGame()
     {
-        Application.Quit();
+        SceneManager.LoadScene("Menu");
     }
 }
 
