@@ -12,7 +12,13 @@ public class UIInventoryPanel : MonoBehaviour
 
     public RectTransform inventoryPanel;
     public GameObject slotPrefab;
-    public RectTransform contentPanel;
+
+    public RectTransform normalContentPanel;
+    public RectTransform battleContentPanel;
+
+    public Button arrowUp;
+    public Button arrowDown;
+
     public ScrollRect scrollRect;
 
     private Vector3 swipeStartPosition;
@@ -35,6 +41,9 @@ public class UIInventoryPanel : MonoBehaviour
     }
     */
 
+    /// <summary>
+    /// 
+    /// </summary>
     private void Update()
     {
         if(Input.GetMouseButtonDown(0))
@@ -60,15 +69,17 @@ public class UIInventoryPanel : MonoBehaviour
         }
     }
 
-
+    /// <summary>
+    /// 
+    /// </summary>
     public void SetSlots()
     {
-        UIInventoryElement[] slotElements = contentPanel.GetComponentsInChildren<UIInventoryElement>();
+        UIInventoryElement[] slotElements = scrollRect.content.GetComponentsInChildren<UIInventoryElement>();
 
         if (slotElements != null && slotElements.Length > 0)
         {
             Slots = new UIInventoryElement[slotElements.Length];
-            contentPanel.sizeDelta = new Vector2(0, inventoryPanel.sizeDelta.y * (Slots.Length / 4));
+            scrollRect.content.sizeDelta = new Vector2(0, inventoryPanel.sizeDelta.y * (Slots.Length / 4));
 
             for (int i = 0; i < Slots.Length; i++)
             {
@@ -78,23 +89,118 @@ public class UIInventoryPanel : MonoBehaviour
     }
 
     /// <summary>
+    /// 
+    /// </summary>
+    public void SwitchToNormal()
+    {
+        SwitchContent(normalContentPanel);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public void SwitchToBattle()
+    {
+        SwitchContent(battleContentPanel);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="content"></param>
+    private void SwitchContent(RectTransform content)
+    {
+        scrollRect.content.gameObject.SetActive(false);
+        scrollRect.content = content;
+        scrollRect.content.gameObject.SetActive(true);
+
+        scrollRect.verticalNormalizedPosition = 1.0f;
+        UpdateArrowButtonStatus();
+    }
+
+    public void SwipeUp()
+    {
+        Swipe(false);
+    }
+
+    public void SwipeDown()
+    {
+        Swipe(true);
+    }
+
+    /// <summary>
     /// Swipe SideInventory
     /// </summary>
     /// <param name="forward"></param>
     /// <returns></returns>
     public bool Swipe(bool forward)
     {
+        bool status = false;
+
         if(forward && scrollRect.verticalNormalizedPosition > 0.0f)
         {
-            scrollRect.verticalNormalizedPosition -= 0.5f; //(inventoryPanel.sizeDelta.y * 0.5f) / contentPanel.sizeDelta.y; //(contentPanel.anchoredPosition.y / inventoryPanel.sizeDelta.y);
-            return true;
+            scrollRect.verticalNormalizedPosition -= (inventoryPanel.sizeDelta.y / scrollRect.content.sizeDelta.y) * 2.0f; //(inventoryPanel.sizeDelta.y * 0.5f) / contentPanel.sizeDelta.y; //(contentPanel.anchoredPosition.y / inventoryPanel.sizeDelta.y);
+            status = true;
         }
-        else if(!forward && scrollRect.verticalNormalizedPosition < ((inventoryPanel.sizeDelta.y * 0.5f) / contentPanel.sizeDelta.y) + 0.5f)
+        else if(!forward && scrollRect.verticalNormalizedPosition < ((inventoryPanel.sizeDelta.y * 0.5f) / scrollRect.content.sizeDelta.y) + 0.5f)
         {
-            scrollRect.verticalNormalizedPosition += 0.5f; //(inventoryPanel.sizeDelta.y * 0.5f) / contentPanel.sizeDelta.y; //(contentPanel.anchoredPosition.y / inventoryPanel.sizeDelta.y);
-            return true;
+            scrollRect.verticalNormalizedPosition += (inventoryPanel.sizeDelta.y / scrollRect.content.sizeDelta.y) * 2.0f; //(inventoryPanel.sizeDelta.y * 0.5f) / contentPanel.sizeDelta.y; //(contentPanel.anchoredPosition.y / inventoryPanel.sizeDelta.y);
+            status = true;
         }
         
-        return false;
+        UpdateArrowButtonStatus();
+
+        return status;
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    private void UpdateArrowButtonStatus()
+    {
+        if (arrowUp != null)
+        {
+            arrowUp.interactable = IsSwipePossible(false);
+        }
+
+        if (arrowDown != null)
+        {
+            arrowDown.interactable = IsSwipePossible(true);
+        }
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="forward"></param>
+    /// <returns></returns>
+    public bool IsSwipePossible(bool forward)
+    {
+        if (forward)
+        {
+            if(scrollRect.verticalNormalizedPosition > 0.0f)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else
+        {
+            if(scrollRect.content.sizeDelta.y <= inventoryPanel.sizeDelta.y)
+            {
+                return false;
+            }
+            else if (scrollRect.verticalNormalizedPosition < ((inventoryPanel.sizeDelta.y * 0.5f) / scrollRect.content.sizeDelta.y) + 0.5f)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

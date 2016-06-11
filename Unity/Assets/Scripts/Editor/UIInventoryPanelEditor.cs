@@ -18,6 +18,16 @@ public class UIInventoryPanelEditor : Editor
             myTarget.SetSlots();
         }
 
+        if (GUILayout.Button("Switch Normal Layout"))
+        {
+            myTarget.SwitchToNormal();
+        }
+
+        if (GUILayout.Button("Switch Battle Layout"))
+        {
+            myTarget.SwitchToBattle();
+        }
+
         if (GUILayout.Button("Swipe down"))
         {
             myTarget.Swipe(true);
