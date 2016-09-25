@@ -1,0 +1,8 @@
+unity:sortingLayerName
+unity:sortingOrder
+unity:layer
+unity:tag
+unity:scale
+unity:isTrigger
+unity:ignore (value = [false|true|collision|visual])
+unity:resource

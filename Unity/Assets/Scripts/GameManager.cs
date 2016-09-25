@@ -122,31 +122,3 @@ public class GameManager : MonoBehaviour
     }
 }
 
-/// <summary>
-/// PlayerSaveGame
-/// </summary>
-public class PlayerSaveGame
-{
-    public Vector3 MapPosition;
-    [SerializeField]
-    public string[] InventoryKeys;
-    public int[] InventoryValues;
-
-    public PlayerSaveGame(Vector3 mapPosition, Dictionary<string, int> inventory)
-    {
-        MapPosition = mapPosition;
-
-        InventoryKeys = new string[inventory.Count];
-        InventoryValues = new int[inventory.Count];
-
-        int index = 0;
-
-        foreach (KeyValuePair<string, int> item in inventory)
-        {
-            InventoryKeys[index] = item.Key;
-            InventoryValues[index] = item.Value;
-
-            ++index;
-        }
-    }
-}

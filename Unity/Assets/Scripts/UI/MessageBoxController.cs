@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 using System.Collections;
 using System.Collections.Generic;
+using Ink.Runtime;
 
 /// <summary>
 /// This class represent a messagebox system, that is based on the ink-middleware.
@@ -9,39 +11,74 @@ using System.Collections.Generic;
 public class MessageBoxController : MonoBehaviour
 {
     [Header("Prefabs")]
-    public Button ChoisePrefab;
-    public Text DialogPrefab;
+    public ChoiseElement ChoisePrefab;
+    public DialogElement DialogPrefab;
 
     [Header("HUD References")]
+    public CanvasGroup canvasGroup;
     public RectTransform ChoiseContainer;
     public RectTransform DialogContainer;
 
-    private List<Button> choises;
-    private List<Text> dialogs;
+    private List<ChoiseElement> choises;
+    private List<DialogElement> dialogs;
 
     #region public methods
+
+    private void OnEnable()
+    {
+        ResetConversation();
+    }
 
     /// <summary>
     /// Show the MessageBox and draw the first content
     /// </summary>
-    public void StartConversation()
+    public void StartConversation(string dialog, List<Choice> choises = null)
     {
-    
+        ResetConversation();
+        ContinueConversation(dialog);
+
+        canvasGroup.alpha = 1f;
+        canvasGroup.blocksRaycasts = true;
+        canvasGroup.interactable = true;
     }
 
     /// <summary>
-    /// Set the choise of the player and continue the conversation
+    /// Show the MessageBox and draw the first content
     /// </summary>
-    /// <param name="choiseID"></param>
-    public void SetChoise(int choiseID)
+    public void ContinueConversation(string dialog, List<Choice> choises = null)
     {
+        ResetChoises();
+        AddDialog(dialog);
 
+        if (choises != null && choises.Count > 0)
+        {
+            for (int i = 0; i < choises.Count; ++i)
+            {
+                AddChoise(choises[i].text, choises[i].index);
+            }
+        }
+
+        canvasGroup.alpha = 1f;
+        canvasGroup.blocksRaycasts = true;
+        canvasGroup.interactable = true;
     }
 
     /// <summary>
     /// Hides the MessageBox and clear the content
     /// </summary>
     public void QuitConversation()
+    {
+        ResetConversation();
+
+        canvasGroup.alpha = 0f;
+        canvasGroup.blocksRaycasts = false;
+        canvasGroup.interactable = false;
+    }
+
+    /// <summary>
+    /// Hides the MessageBox and clear the content
+    /// </summary>
+    public void ResetConversation()
     {
         ResetDialogView();
         ResetDialogView();
@@ -56,7 +93,13 @@ public class MessageBoxController : MonoBehaviour
     /// </summary>
     private void ResetChoises()
     {
-        if (choises == null || choises.Count > 0)
+        if (choises == null)
+        {
+            choises = new List<ChoiseElement>();
+            return;
+        }
+
+        if (choises.Count == 0)
             return;
 
         for (int i = 0; i < choises.Count; i++)
@@ -65,7 +108,7 @@ public class MessageBoxController : MonoBehaviour
         }
 
         choises = null;
-        choises = new List<Button>();
+        choises = new List<ChoiseElement>();
     }
 
     /// <summary>
@@ -73,7 +116,13 @@ public class MessageBoxController : MonoBehaviour
     /// </summary>
     private void ResetDialogView()
     {
-        if (dialogs == null || dialogs.Count > 0)
+        if (dialogs == null)
+        {
+            dialogs = new List<DialogElement>();
+            return;
+        }
+
+        if(dialogs.Count == 0)
             return;
 
         for (int i = 0; i < dialogs.Count; i++)
@@ -82,19 +131,51 @@ public class MessageBoxController : MonoBehaviour
         }
 
         dialogs = null;
-        dialogs = new List<Text>();
+        dialogs = new List<DialogElement>();
     }
 
     /// <summary>
     /// Add choise at the end of the ChoiseView
     /// </summary>
-    private void AddChoise(string content)
+    private void AddChoise(string content, int index)
     {
-        Button choiseElement = Button.Instantiate(ChoisePrefab);
+        ChoiseElement choiseElement = ChoiseElement.Instantiate(ChoisePrefab);
         choiseElement.transform.parent = ChoiseContainer.transform;
+        choiseElement.SetChoiseElement(content, index, SetChoise);
+        choiseElement.gameObject.SetActive(false);
 
-        choiseElement.GetComponentInChildren<Text>().text = content;
         choises.Add(choiseElement);
+    }
+
+    public void EnableChoises()
+    {
+        for(int i = 0; i < choises.Count; i++)
+        {
+            choises[i].gameObject.SetActive(true);
+        }
+    }
+
+    public void DisableChoises()
+    {
+        for (int i = 0; i < choises.Count; i++)
+        {
+            choises[i].gameObject.SetActive(false);
+        }
+    }
+
+    public bool AreChoisesEnabled()
+    {
+        return choises != null && choises.Count > 0 ? (choises[choises.Count - 1].gameObject.activeSelf) : false;
+    }
+
+    /// <summary>
+    /// Set the choise of the player and continue the conversation
+    /// </summary>
+    /// <param name="choiseID"></param>
+    public void SetChoise(int choiseID)
+    {
+        DialogController.instance.OnSetChoise(choiseID);
+        DisableChoises();
     }
 
     /// <summary>
@@ -102,11 +183,18 @@ public class MessageBoxController : MonoBehaviour
     /// </summary>
     private void AddDialog(string content)
     {
-        Text textElement = Text.Instantiate(DialogPrefab);
+        DialogElement textElement = DialogElement.Instantiate(DialogPrefab);
         textElement.transform.parent = DialogContainer.transform;
+        int protagonistIndex = content.IndexOf(":")+1;
+        textElement.SetDialogElement(content.Substring(0, protagonistIndex), content.Substring(protagonistIndex), protagonistIndex, DialogIsVisible);
 
-        textElement.text = content;
         dialogs.Add(textElement);
+    }
+
+    private void DialogIsVisible()
+    {
+        DialogController.instance.OnDialogFinished();
+        EnableChoises();
     }
 
     /// <summary>
@@ -125,6 +213,13 @@ public class MessageBoxController : MonoBehaviour
     private void RemoveDialog(int index)
     {
         Destroy(dialogs[index].gameObject);
+    }
+
+    public void FinishConversation()
+    {
+        ResetChoises();
+        AddChoise("Ende", -10);
+        EnableChoises();
     }
 
     #endregion

@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public delegate void SpecialCharFoundCallback(AudioClip audioClip);
+public delegate void FinishedCallback();
 
 public class UITextAnimator : MonoBehaviour 
 {
@@ -18,6 +19,7 @@ public class UITextAnimator : MonoBehaviour
 	public bool loop = true;
 	public bool pingpong = false;
 	public float duration = 0.1f;
+    public bool useComponentText = true;
 
 	public bool blinkingCursor = false;
 	public string blinkingCursorChar = "";
@@ -36,8 +38,9 @@ public class UITextAnimator : MonoBehaviour
 
 	private float nextCharPlacementTime = 0.0f;
 	public event SpecialCharFoundCallback OnSpecialCharFoundCallback;
+    public event FinishedCallback OnFinishedCallback;
 
-	private bool animation = true;
+    private bool animation = true;
 	private AudioClip curAudioClip = null;
 
 	#endregion
@@ -51,8 +54,15 @@ public class UITextAnimator : MonoBehaviour
 	{
 		component = GetComponent<Text>();
 
-		MapAudioToContent();
-		OnSpecialCharFoundCallback += AudioManager.instance.PlaySound;
+        if (useComponentText)
+        {
+            content = component.text;
+        }
+
+        MapAudioToContent();
+
+        //if(AudioManager.instance != null)
+		//OnSpecialCharFoundCallback += AudioManager.instance.PlaySound;
 
 		if (playOnEnable) 
 		{
@@ -63,27 +73,44 @@ public class UITextAnimator : MonoBehaviour
 	/// <summary>
 	/// Starts the animation.
 	/// </summary>
-	public void StartAnimation(SpecialCharFoundCallback callback = null)
+	public void StartAnimation(int startIndex = 0, SpecialCharFoundCallback callback = null, FinishedCallback finishedCallback = null)
 	{
 		if(callback != null) 
 		{
 			OnSpecialCharFoundCallback += callback;
 		}
 
-		charIndex = 0;
+        if (finishedCallback != null)
+        {
+            OnFinishedCallback += finishedCallback;
+        }
+
+        charIndex = startIndex;
 		maxCharIndex = content.Length-1;
 
 		nextCharPlacementTime = 0.0f;
 		animation = directionForward = true;
 	}
 
-	/// <summary>
-	/// Stops the animation.
+    /// <summary>
+	/// Starts the animation.
 	/// </summary>
-	public void StopAnimation()
+	public void StartAnimation(string content, int startIndex = 0, SpecialCharFoundCallback callback = null, FinishedCallback finishedCallback = null)
+    {
+        this.content = content;
+        MapAudioToContent();
+
+        StartAnimation(startIndex, callback, finishedCallback);
+    }
+
+    /// <summary>
+    /// Stops the animation.
+    /// </summary>
+    public void StopAnimation()
 	{
 		OnSpecialCharFoundCallback = null;
-		animation = false;
+        OnFinishedCallback = null;
+        animation = false;
 	}
 
 	/// <summary>
@@ -98,7 +125,10 @@ public class UITextAnimator : MonoBehaviour
 		{
 			if (charIndex > maxCharIndex) 
 			{
-				if(pingpong) 
+                if(OnFinishedCallback != null)
+                    OnFinishedCallback();
+
+                if(pingpong) 
 				{
 					directionForward = !directionForward;
 					charIndex = maxCharIndex;

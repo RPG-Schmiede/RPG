@@ -1,6 +1,6 @@
 ﻿Platinum El-Mitglied: Dieser Spinner muss doch hier irgendwo stecken!
 	*[Was treiben die da?]
-	Player: Nach wem sucht Ihr denn? Ich bin hier aufgewachsen. Vielleicht kann ich helfen.
+	Player: Nach wem sucht Ihr denn? Ich bin hier aufgewachsen. Vielleicht kann ich helfen. 
 	Platinum El-Mitglied: Wir suchen so einen Idioten mit einer brauenen Mütze und einer Warnweste!
 		**[Warum suchen die nach dem?]
 		Player: Und was wollt Ihr von ihm?
