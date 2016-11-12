@@ -4,6 +4,7 @@ using Ink.Runtime;
 using UCFW;
 using System;
 using System.Collections.Generic;
+using UnityEngine.Events;
 
 public delegate void SetChoiseCallback(int index);
 
@@ -24,6 +25,8 @@ public class DialogController : Singleton<DialogController>
     public SetChoiseCallback OnSetChoise;
     public FinishedCallback OnDialogFinished;
 
+    private UnityAction dialogFinishedCallback;
+
     #endregion
 
     /// <summary>
@@ -35,7 +38,7 @@ public class DialogController : Singleton<DialogController>
         OnDialogFinished += SetDialogDrawen;
     }
 
-    public void StartDialog()
+    public void StartDialog(UnityAction callback)
     {
         if(actors != null && actors.Length > 0)
         {
@@ -46,7 +49,9 @@ public class DialogController : Singleton<DialogController>
                 actorNormalColor[i] = actors[i].GetComponentInChildren<MeshRenderer>().material.color;
             }  
         }
+
         LoadStory(inkAsset);
+        dialogFinishedCallback = callback;
     }
 
     /// <summary>
@@ -141,6 +146,8 @@ public class DialogController : Singleton<DialogController>
         HighlightActors(""); // unhighlight
         _inkStory = null;
         messageBoxController.QuitConversation();
+
+        dialogFinishedCallback.Invoke();
     }
 
     public void SetDialogDrawen()
