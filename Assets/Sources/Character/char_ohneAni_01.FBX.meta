@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: 9c7cf631375d14743b79f56a7d051d23
+timeCreated: 1478953657
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bogen
+    100002: //RootNode
+    100004: dolch001
+    100006: dolch_scheide
+    100008: eye
+    100010: guertel
+    100012: Hair_igel
+    100014: Hemd
+    100016: hose
+    100018: koecher
+    100020: kotletten
+    100022: mann_grund
+    100024: mouth
+    100026: Object011
+    100028: pfeil004
+    100030: schild
+    100032: schuhe
+    100034: schwert001
+    100036: schwert_halterung
+    100038: schwert_scheide
+    400000: Bogen
+    400002: //RootNode
+    400004: dolch001
+    400006: dolch_scheide
+    400008: eye
+    400010: guertel
+    400012: Hair_igel
+    400014: Hemd
+    400016: hose
+    400018: koecher
+    400020: kotletten
+    400022: mann_grund
+    400024: mouth
+    400026: Object011
+    400028: pfeil004
+    400030: schild
+    400032: schuhe
+    400034: schwert001
+    400036: schwert_halterung
+    400038: schwert_scheide
+    2300000: Bogen
+    2300002: dolch001
+    2300004: dolch_scheide
+    2300006: eye
+    2300008: guertel
+    2300010: Hair_igel
+    2300012: Hemd
+    2300014: hose
+    2300016: koecher
+    2300018: kotletten
+    2300020: mann_grund
+    2300022: mouth
+    2300024: Object011
+    2300026: pfeil004
+    2300028: schild
+    2300030: schuhe
+    2300032: schwert001
+    2300034: schwert_halterung
+    2300036: schwert_scheide
+    3300000: Bogen
+    3300002: dolch001
+    3300004: dolch_scheide
+    3300006: eye
+    3300008: guertel
+    3300010: Hair_igel
+    3300012: Hemd
+    3300014: hose
+    3300016: koecher
+    3300018: kotletten
+    3300020: mann_grund
+    3300022: mouth
+    3300024: Object011
+    3300026: pfeil004
+    3300028: schild
+    3300030: schuhe
+    3300032: schwert001
+    3300034: schwert_halterung
+    3300036: schwert_scheide
+    4300000: mann_grund
+    4300002: schuhe
+    4300004: Object011
+    4300006: kotletten
+    4300008: Hemd
+    4300010: hose
+    4300012: schwert_halterung
+    4300014: guertel
+    4300016: schild
+    4300018: Bogen
+    4300020: schwert_scheide
+    4300022: dolch_scheide
+    4300024: koecher
+    4300026: Hair_igel
+    4300028: pfeil004
+    4300030: eye
+    4300032: mouth
+    4300034: dolch001
+    4300036: schwert001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
